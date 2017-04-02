@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/Toolbar"
+        android:gravity="center"
+        app:contentInsetStart="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imgLogoBg"
+                android:adjustViewBounds="true"
+                android:src="@drawable/toolbarbg" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/toplogo2"
+                android:background="@android:color/transparent" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/btnLogin">
+
+                <TextView
+                    android:background="@android:color/transparent"
+                    android:text="로그인\n/ 가입"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView9"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:id="@+id/btnMyInfo">
+
+                <TextView
+                    android:background="@android:color/transparent"
+                    android:text="내 정보"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView10"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imgHomeTopBg1"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:background="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:gravity="center_vertical">
+<!--
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgHomeTopBtn1"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:layout_marginRight="5dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/imgHomeTopBtn2"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:layout_marginLeft="5dp" />
+-->
+
+                    <LinearLayout
+                        android:id="@+id/btnQRCode"
+                        android:layout_weight="1"
+                        android:layout_marginRight="6dp"
+                        android:background="@drawable/round_box_skyblue_white"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/btnqrcode"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="QR코드 등록"
+                            android:layout_marginTop="7dp"
+                            android:textSize="15sp"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/btnInquire"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_box_skyblue_white"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="6dp"
+                        android:gravity="center"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp">
+
+                        <ImageView
+                            android:src="@drawable/btnhelp"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:lines="2"
+                            android:text="PC방 제보하기, \n 가맹 문의"
+                            android:gravity="center"
+                            android:textSize="14sp"
+                            android:textColor="@android:color/black" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:background="@drawable/rectangle_box_border"
+                android:gravity="center_vertical"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:layout_height="42dp">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    app:srcCompat="@drawable/ic_pointer"
+                    android:id="@+id/imageView4"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:text="서울시 마포구 상수동"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtHomeCurrentAddress"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:textSize="13sp"
+                    android:textColor="#4A4A4A"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:lines="1" />
+
+                <TextView
+                    android:text="위치 재검색"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtHomeLocationResearch"
+                    android:layout_marginRight="15dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/colorDisabled"
+                    android:layout_marginLeft="10dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/imgHomeTopBg2"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:paddingStart="40dp"
+                    android:paddingEnd="40dp"
+                    android:paddingTop="10dp"
+                    android:layout_height="90dp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@android:color/background_light"
+                    android:id="@+id/whitebg"
+                    android:alpha="0.85" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:text="등록된 PC방 수 : 11034개"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView4"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="PC방 분야 앱 다운로드 1위, DB수 1위"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView8"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/black" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frmlayoutHomeNaviBtn">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/imgHomeNaviBtn"
+                    android:scaleType="centerCrop"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@android:color/background_dark"
+                    android:id="@+id/blackbg"
+                    android:alpha="0.25"
+                    android:adjustViewBounds="false" />
+
+                <TextView
+                    android:text="내 주변 PC방 찾기"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView4a"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frmlayoutHomeFavBtn">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:id="@+id/imgHomeFavBtn"
+                    android:scaleType="centerCrop"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@android:color/background_dark"
+                    android:id="@+id/blackbgb"
+                    android:alpha="0.25"
+                    android:adjustViewBounds="false" />
+
+                <TextView
+                    android:text="내 PC방 즐겨찾기"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView4c"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

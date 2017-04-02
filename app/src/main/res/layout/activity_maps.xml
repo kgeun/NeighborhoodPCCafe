@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/mapsToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:layout_scrollFlags="scroll|enterAlways"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:titleTextAppearance="@style/ActionBar.nameText">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="-60dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="빨리와 PC방"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMapsTitle"
+            android:layout_weight="0.4"
+            android:gravity="bottom|center"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:text="서울시 마포구 상수동"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtMapsAddress"
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="3dp"
+            android:layout_weight="0.4" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.b2come.pcroom.activity.MapsActivity"
+    />
+</LinearLayout>

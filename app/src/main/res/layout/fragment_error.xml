@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/errorscreen"
+        android:id="@+id/imgErrorStatus"
+        android:layout_width="150dp" />
+
+    <TextView
+        android:text="로그인이 필요해요"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtErrorMsg1"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtErrorMsg2"
+        android:text="에러메시지"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:lineSpacingExtra="6sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnError"
+        android:textColor="@android:color/white"
+        android:layout_margin="30dp"
+        android:background="@drawable/btninfoaddbg"
+        android:paddingBottom="15dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp" />
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="18dp">
+
+        <TextView
+            android:text="가맹점 등록을 원하시는 사장님들은 양식에 맞게 입력해주세요. 기입하신 전화번호로 연락 드리겠습니다."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView7"
+            android:layout_marginBottom="16dp"
+            android:gravity="fill" />
+
+        <TextView
+            android:text="매장 이름"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10a"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editTextb"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:text="매장 주소"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10c"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editTextd"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:text="매장 전화번호"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10e"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editTextf"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:text="시설 정보"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10g"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:text="카드결제"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxh"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:text="푸드카페"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2i"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:text="프린터"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxj"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:text="스팀게임"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2k"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:text="기계식 키보드"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBoxl"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:text="휴대폰 충전"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2m"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <CheckBox
+                android:text="주차가능"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"
+                android:layout_weight="1" />
+
+            <CheckBox
+                android:text="와이파이"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox2"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <TextView
+            android:text="기타 정보 / 설명"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10n"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editTexto"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp" />
+
+
+        <TextView
+            android:text="연락 받으실 전화번호"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView10"
+            android:textSize="16sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editTextp"
+            android:layout_marginBottom="16dp" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btninfoaddbg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:text="보내기"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

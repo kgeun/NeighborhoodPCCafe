@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="130dp">
+
+                <TextView
+                    android:text="좌석배치도 보기"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView18"
+                    android:gravity="center"
+                    android:background="@drawable/bg_seatpicture"
+                    android:textColor="@android:color/white"
+                    android:layout_margin="20dp"
+                    android:padding="15dp" />
+
+                <android.support.v7.widget.GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    grid:columnCount="8"
+                    android:padding="20dp"
+                    android:id="@+id/gridSeatInfo"
+                    grid:alignmentMode="alignBounds"
+                    android:layout_gravity="center_horizontal"
+                    />
+            </LinearLayout>
+
+
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton style="@style/AppTheme"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="New Button"
+                android:id="@+id/btnRfrsh"
+                android:elevation="10dp"
+                android:background="@drawable/seat_refresh_circle"
+                android:src="@drawable/refresh"
+                android:layout_marginBottom="75dp"
+                android:adjustViewBounds="false"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

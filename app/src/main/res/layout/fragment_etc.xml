@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:grid="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/etc_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/Toolbar"
+        app:contentInsetStart="0dp"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        >
+
+        <TextView
+            android:text="더보기"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textView6"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="normal|bold"
+            android:textColor="@android:color/white" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:text="내 정보"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_box_border"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="25dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:id="@+id/layoutLoginInfo">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:text="홍길동"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/txtEtcUserName" />
+
+                    <TextView
+                        android:text="aaa@gmail.com"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txtEtcUserEmail"
+                        android:layout_marginTop="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="right|center_vertical">
+
+                    <TextView
+                        android:text="로그아웃"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_etc_logout"
+                        android:background="@drawable/bg_list_att_active"
+                        android:textColor="@color/colorPrimaryAccent"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_box_border"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="25dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:id="@+id/layoutNoLogin">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7">
+
+                    <TextView
+                        android:text="로그인되있지 않습니다."
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView19"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginRight="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="right|center_vertical">
+
+                    <TextView
+                        android:text="로그인 / 가입"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btn_etc_login"
+                        android:background="@drawable/bg_list_att_active"
+                        android:textColor="@color/colorPrimaryAccent"
+                        android:textStyle="normal|bold"
+                        android:textSize="14sp"
+                        android:paddingTop="20dp"
+                        android:paddingBottom="20dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+<!--
+        <android.support.v7.widget.GridLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:orientation="horizontal"
+            app:columnCount="4"
+            android:background="@drawable/rectangle_box_border"
+            app:alignmentMode="alignBounds"
+            app:rowCount="2">
+
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                app:layout_gravity="fill_horizontal"
+                android:background="@drawable/rectangle_box_border_foretc"
+                grid:layout_columnWeight="1"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/star_big_on"
+                    android:id="@+id/imageView5"
+                    android:src="@android:drawable/star_big_on" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView26"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                app:layout_gravity="fill_horizontal"
+                android:background="@drawable/rectangle_box_border_foretc"
+                grid:layout_columnWeight="1"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/star_big_on"
+                    android:id="@+id/imageView5"
+                    android:src="@android:drawable/star_big_on" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView26"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                app:layout_gravity="fill_horizontal"
+                android:background="@drawable/rectangle_box_border_foretc"
+                grid:layout_columnWeight="1"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/star_big_on"
+                    android:id="@+id/imageView5"
+                    android:src="@android:drawable/star_big_on" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView26"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                app:layout_gravity="fill_horizontal"
+                android:background="@drawable/rectangle_box_border_foretc"
+                grid:layout_columnWeight="1"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/star_big_on"
+                    android:id="@+id/imageView5"
+                    android:src="@android:drawable/star_big_on" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView26"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                app:layout_gravity="fill_horizontal"
+                android:background="@drawable/rectangle_box_border_foretc"
+                grid:layout_columnWeight="1"
+                android:layout_width="0dp"
+                app:layout_columnWeight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/star_big_on"
+                    android:id="@+id/imageView5"
+                    android:src="@android:drawable/star_big_on" />
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView26"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+
+
+
+
+        </android.support.v7.widget.GridLayout>
+
+-->
+    </LinearLayout>
+
+
+</LinearLayout>

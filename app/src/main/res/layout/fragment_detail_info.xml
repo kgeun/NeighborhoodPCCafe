@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            app:srcCompat="@drawable/noimage"
+            android:id="@+id/imageView11"
+            android:layout_height="150dp"
+            android:background="@android:color/white" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@drawable/rectangle_box_border"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:id="@+id/layoutDetailOpenMap">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    app:srcCompat="@drawable/ic_locate"
+                    android:id="@+id/imageView12"
+                    android:adjustViewBounds="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:text="서울시 서초구 빠빠빠바"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDetailAddress"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:text="지도보기"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtBtnDetailOpenMap"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_box_border"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    app:srcCompat="@drawable/ic_phone"
+                    android:id="@+id/imageView12aa"
+                    android:adjustViewBounds="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:text="02-5353-3434"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtDetailPhone"
+                    android:layout_weight="1"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical" />
+
+                <TextView
+                    android:text="전화걸기"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtBtnDetailCall"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center_vertical" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/rectangle_box_border"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="15dp">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        app:srcCompat="@drawable/ic_seat_detail"
+                        android:id="@+id/imageView12ab"
+                        android:adjustViewBounds="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/txtDetailPhoneac"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="정보 없음"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        app:srcCompat="@drawable/ic_rating"
+                        android:id="@+id/imageView12d"
+                        android:adjustViewBounds="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/txtDetailPhonee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="정보 없음"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        app:srcCompat="@drawable/ic_reviewnum"
+                        android:id="@+id/imageView12f"
+                        android:adjustViewBounds="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:id="@+id/txtDetailPhoneg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="정보 없음"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/btninfoaddbg"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnAddPCCafeInfo">
+
+            <ImageView
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_addinfo"
+                android:id="@+id/imageView3"
+                android:layout_width="20dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:text="이 PC방 정보 수정 / 추가 "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:text="요금"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+             />
+<!--
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_box_border"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:text="1시간 1000원 (회원)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:text="6시간 5000원 (회원)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:text="1시간 1200원 (비회원)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:text="12시간 10000원 (회원)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="1시간 1200원 (비회원)"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_box_border"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:text="정보 없음"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="PC 사양"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11h"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+        <!--
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_box_border"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:text="CPU : Intel i7 6700"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:text="그래픽 : GTX1080"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:text="램 : 16기가"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:text="모니터 : 32인치"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="키보드 : 기계식"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+        </LinearLayout>-->
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle_box_border"
+            android:padding="20dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:text="정보 없음"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14i"
+                    android:layout_weight="0.5"
+                    android:textColor="@android:color/black"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:layout_marginBottom="5dp">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="세부정보"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11j"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_box_border"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="5dp"
+            android:weightSum="3">
+
+            <com.b2come.pcroom.item.MyGridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                grid:alignmentMode="alignBounds"
+                    grid:columnCount="3"
+                    android:columnCount="3"
+                    android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:id="@+id/layoutInfoSeat"
+                            grid:layout_gravity="fill_horizontal"
+                            grid:layout_columnWeight="1"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <ImageView
+                                android:id="@+id/imgDetailSeat"
+                                android:adjustViewBounds="true"
+                                android:layout_width="70dp"
+                                android:layout_height="90dp" />
+
+                            <TextView
+                                android:text="좌석정보"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:id="@+id/layoutInfoCard"
+                            grid:layout_gravity="fill_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            grid:layout_columnWeight="1">
+
+                            <ImageView
+                                android:layout_height="90dp"
+                                android:id="@+id/imgDetailCard"
+                                android:adjustViewBounds="true"
+                                android:layout_width="70dp" />
+                            <TextView
+                                android:text="카드결제"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3k" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:id="@+id/layoutInfoFood"
+                            grid:layout_gravity="fill_horizontal"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            grid:layout_columnWeight="1">
+
+                            <ImageView
+                                android:layout_height="90dp"
+                                android:id="@+id/imgDetailFood"
+                                android:adjustViewBounds="true"
+                                android:layout_width="70dp" />
+
+                            <TextView
+                                android:text="푸드카페"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3l" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/layoutInfoPrint"
+                            grid:layout_gravity="fill_horizontal"
+                            grid:layout_columnWeight="1"
+                            >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:id="@+id/imgDetailPrint"
+                                android:adjustViewBounds="true"
+                                android:layout_height="90dp" />
+
+                            <TextView
+                                android:text="프린터"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3m" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/layoutInfoSteam"
+                            grid:layout_gravity="fill_horizontal"
+                            grid:layout_columnWeight="1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imgDetailSteam"
+                                android:adjustViewBounds="true"
+                                android:layout_width="70dp"
+                                android:layout_height="90dp" />
+
+                            <TextView
+                                android:text="스팀게임"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3n" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/layoutInfoKeyboard"
+                            grid:layout_gravity="fill_horizontal"
+                            grid:layout_columnWeight="1"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imgDetailKeyboard"
+                                android:adjustViewBounds="true"
+                                android:layout_width="70dp"
+                                android:layout_height="90dp" />
+                            <TextView
+                                android:text="기계식키보드"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3o" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_height="120dp"
+                            android:layout_width="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/layoutInfoCharger"
+                            grid:layout_gravity="fill_horizontal"
+                            grid:layout_columnWeight="1"
+                            >
+
+                            <ImageView
+                                android:layout_width="70dp"
+                                android:layout_height="90dp"
+                                android:id="@+id/imgDetailCharger"
+                                android:adjustViewBounds="true" />
+
+                            <TextView
+                                android:text="휴대폰 충전"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3p" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/layoutInfoParking"
+                            grid:layout_gravity="fill_horizontal"
+                            grid:layout_columnWeight="1"
+                            >
+
+                            <ImageView
+                                android:layout_height="90dp"
+                                android:id="@+id/imgDetailParking"
+                                android:adjustViewBounds="true"
+                                android:layout_width="70dp" />
+
+                            <TextView
+                                android:text="주차 가능"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3q" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:id="@+id/layoutInfoWifi"
+                            grid:layout_gravity="fill_horizontal"
+                            grid:layout_columnWeight="1"
+                            >
+
+                            <ImageView
+                                android:layout_height="90dp"
+                                android:id="@+id/imgDetailWifi"
+                                android:adjustViewBounds="true"
+                                android:layout_width="70dp" />
+                            <TextView
+                                android:text="와이파이"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3r" />
+
+                        </LinearLayout>
+
+
+                </com.b2come.pcroom.item.MyGridLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

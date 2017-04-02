@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/ic_home"
+        title="홈" />
+    <tab
+        id="@+id/tab_navi"
+        icon="@drawable/ic_navi"
+        title="내주변" />
+    <tab
+        id="@+id/tab_like"
+        icon="@drawable/ic_like"
+        title="즐겨찾기" />
+    <tab
+        id="@+id/tab_search"
+        icon="@drawable/ic_search"
+        title="검색" />
+    <tab
+        id="@+id/tab_etc"
+        icon="@drawable/ic_etc"
+        title="더보기" />
+</tabs>

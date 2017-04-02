@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_centerHorizontal="true"
+    grid:layout_gravity="fill_horizontal"
+    grid:layout_columnWeight="1"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/seat_info_list_use"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/txtSeatRed"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="444"
+        android:textColor="?attr/colorButtonNormal"
+        android:textSize="15sp" />
+
+</LinearLayout>

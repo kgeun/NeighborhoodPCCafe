@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">우리동네 PC방</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="local_server">192.168.56.1:8080</string>
+    <string name="wepc_server">wepc.co.kr</string>
+    <string name="facebook_app_id">184076858738849</string>
+</resources>

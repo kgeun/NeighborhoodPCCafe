@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/search_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_horizontal"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:titleTextAppearance="@style/ActionBar.nameText"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:text="주제별 검색"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rectangle_box_border"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_height="120dp"
+                            android:layout_width="120dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="100dp"
+                                android:id="@+id/imgHomeBtnSeat"
+                                android:adjustViewBounds="true" />
+
+                            <TextView
+                                android:text="좌석정보"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3a" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_height="100dp"
+                                android:id="@+id/imgHomeBtnCard"
+                                android:adjustViewBounds="true"
+                                android:layout_width="80dp" />
+                            <TextView
+                                android:text="카드결제"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3b" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_height="100dp"
+                                android:id="@+id/imgHomeBtnFood"
+                                android:adjustViewBounds="true"
+                                android:layout_width="80dp" />
+
+                            <TextView
+                                android:text="푸드카페"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3c" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_height="120dp"
+                            android:layout_width="120dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="100dp"
+                                android:id="@+id/imgHomeBtnPrint"
+                                android:adjustViewBounds="true" />
+
+                            <TextView
+                                android:text="프린터"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3d" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_height="100dp"
+                                android:id="@+id/imgHomeBtnSteam"
+                                android:adjustViewBounds="true"
+                                android:layout_width="80dp" />
+
+                            <TextView
+                                android:text="스팀게임"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3e" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_height="100dp"
+                                android:id="@+id/imgHomeBtnKeyboard"
+                                android:adjustViewBounds="true"
+                                android:layout_width="80dp" />
+                            <TextView
+                                android:text="기계식키보드"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3f" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_height="120dp"
+                            android:layout_width="120dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="100dp"
+                                android:id="@+id/imgHomeBtnCharger"
+                                android:adjustViewBounds="true" />
+
+                            <TextView
+                                android:text="휴대폰 충전"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3g" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_height="100dp"
+                                android:id="@+id/imgHomeBtnParking"
+                                android:adjustViewBounds="true"
+                                android:layout_width="80dp" />
+
+                            <TextView
+                                android:text="주차 가능"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3h" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp">
+
+                            <ImageView
+                                android:layout_height="100dp"
+                                android:id="@+id/imgHomeBtnWifi"
+                                android:adjustViewBounds="true"
+                                android:layout_width="80dp" />
+                            <TextView
+                                android:text="와이파이"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/textView3i" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

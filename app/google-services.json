@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "338661391809",
+    "firebase_url": "https://wooripc-5a730.firebaseio.com",
+    "project_id": "wooripc-5a730",
+    "storage_bucket": "wooripc-5a730.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338661391809:android:d4e8a664054e9c95",
+        "android_client_info": {
+          "package_name": "com.b2come.pcroom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338661391809-utmsukgtta6fn8j114bnako0qdou4g2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.b2come.pcroom",
+            "certificate_hash": "14BDEA67AFED621FB69207A7C19F49DD5F0186A4"
+          }
+        },
+        {
+          "client_id": "338661391809-dknk0qocfigupcim9tojc5ro986enhbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMqnqNkOatSkQUU80pqrkVahGfWUVNLec"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338661391809-dknk0qocfigupcim9tojc5ro986enhbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

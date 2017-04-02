@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:id="@+id/ivPoster"
+        app:srcCompat="@drawable/noimage"
+        android:layout_width="300dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="니나가라 PC방"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:id="@+id/txtFavPCCafeName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="서울시 서초구 주소주소"
+        android:layout_marginBottom="20dp"
+        android:textSize="14sp"
+        android:id="@+id/txtFavPCCafeAddress" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="이 PC방을 즐겨찾기에 등록하시겠습니까?"
+        android:textSize="14sp"
+        android:id="@+id/textView" />
+</LinearLayout>
