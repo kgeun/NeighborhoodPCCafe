@@ -83,7 +83,6 @@ public class MainActivity extends AppCompatActivity{
     public final String OAUTH_CLIENT_SECRET = "cAhCnTmyoO";
     public final String OAUTH_CLIENT_NAME = "우리동네 PC방";
 
-
     Fragment newFragment = null;
 
     int mCurrentFragmentIndex;

@@ -40,9 +40,10 @@ public class SearchFragment extends Fragment implements LocationChangeApplyListe
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setHasOptionsMenu(true);
+        //setHasOptionsMenu(true);
     }
 
+    /*
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 
@@ -81,7 +82,7 @@ public class SearchFragment extends Fragment implements LocationChangeApplyListe
         }
     };
 
-/*
+
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
 
@@ -111,18 +112,15 @@ public class SearchFragment extends Fragment implements LocationChangeApplyListe
 
         View view = inflater.inflate(R.layout.fragment_search, container, false);
         Toolbar toolbar = (Toolbar) view.findViewById(R.id.search_toolbar);
-        toolbar.inflateMenu(R.menu.dashboard);
-        toolbar.setTitle("검색하기");
+        //toolbar.inflateMenu(R.menu.dashboard);
 
-        searchView = (SearchView) toolbar.getMenu().findItem(R.id.menu_search).getActionView();
-        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+        ImageView btnSearch= (ImageView) view.findViewById(R.id.btnSearch2);
+
+        btnSearch.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onQueryTextSubmit(String s) {
-                return false;
-            }
-            @Override
-            public boolean onQueryTextChange(String s) {
-                return false;
+            public void onClick(View view) {
+                Toast.makeText(getActivity(),"눌렷음",Toast.LENGTH_SHORT);
             }
         });
 
