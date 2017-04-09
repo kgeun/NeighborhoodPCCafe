@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity{
     public static OAuthLogin mOAuthLoginModule;
     public final String OAUTH_CLIENT_ID = "ZfWPhijkuQRd5ntwnxxI";
     public final String OAUTH_CLIENT_SECRET = "cAhCnTmyoO";
-    public final String OAUTH_CLIENT_NAME = "우리동네 PC방";
+    public final String OAUTH_CLIENT_NAME = "우리동네 피씨방구";
 
     Fragment newFragment = null;
 

@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/WooriPC1.iml" filepath="$PROJECT_DIR$/WooriPC1.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wooripc_android.iml" filepath="$PROJECT_DIR$/wooripc_android.iml" />
     </modules>
   </component>
 </project>
