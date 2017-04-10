@@ -6,10 +6,7 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="93d5a1a9-5942-4a1e-a994-1a0743010044" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/b2come/pcroom/activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/b2come/pcroom/activity/MainActivity.java" />
-    </list>
+    <list default="true" id="93d5a1a9-5942-4a1e-a994-1a0743010044" name="Default" comment="" />
     <ignored path="wooripc_android.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,9 +66,12 @@
       <file leaf-file-name="SearchFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/b2come/pcroom/fragment/SearchFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="462">
+              <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+              <folding>
+                <element signature="e#4118#4309#0" expanded="true" />
+                <element signature="e#4308#4309#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -2518,9 +2518,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/b2come/pcroom/fragment/SearchFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="462">
+          <caret line="116" column="0" selection-start-line="116" selection-start-column="0" selection-end-line="116" selection-end-column="0" />
+          <folding>
+            <element signature="e#4118#4309#0" expanded="true" />
+            <element signature="e#4308#4309#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
