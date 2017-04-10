@@ -1,38 +1,34 @@
 package com.b2come.pcroom.activity;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.location.LocationProvider;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.b2come.pcroom.R;
 import com.b2come.pcroom.applicationclass.Util;
 import com.b2come.pcroom.fragment.EtcFragment;
 import com.b2come.pcroom.fragment.HomeFragment;
 import com.b2come.pcroom.fragment.LikeFragment;
 import com.b2come.pcroom.fragment.NaviFragment;
-import com.b2come.pcroom.R;
 import com.b2come.pcroom.fragment.SearchFragment;
 import com.b2come.pcroom.interfaces.LocationChangeApplyListener;
-import com.facebook.AccessToken;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.gun0912.tedpermission.PermissionListener;
@@ -41,7 +37,6 @@ import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
-import com.loopj.android.http.ResponseHandlerInterface;
 import com.nhn.android.naverlogin.OAuthLogin;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
@@ -50,7 +45,6 @@ import com.tsengvn.typekit.TypekitContextWrapper;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
