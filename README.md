@@ -2,6 +2,8 @@
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
+우리동네PC방 Android Platform Application
+
 ### What is this repository for? ###
 
 * Quick summary
