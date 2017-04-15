@@ -92,7 +92,7 @@ public class SearchReusltActivity extends AppCompatActivity{
                 }
 
                 mAdapter.notifyDataSetChanged();
-                bindClickEvent();
+
             }
         });
     }

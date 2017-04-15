@@ -7,8 +7,8 @@ android {
         applicationId 'com.b2come.pcroom'
         minSdkVersion 16
         targetSdkVersion 24
-        versionCode 21
-        versionName "3.02"
+        versionCode 22
+        versionName "3.03"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }

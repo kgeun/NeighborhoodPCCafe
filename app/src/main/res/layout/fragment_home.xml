@@ -285,68 +285,75 @@
 
             </FrameLayout>
 
+            <ImageView
+                android:id="@+id/ivHomeAdv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true" />
+
             <FrameLayout
+                android:id="@+id/frmlayoutHomeNaviBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/frmlayoutHomeNaviBtn">
+                android:layout_marginTop="3dp">
 
                 <ImageView
-                    android:layout_width="match_parent"
                     android:id="@+id/imgHomeNaviBtn"
-                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:adjustViewBounds="true" />
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
 
                 <ImageView
+                    android:id="@+id/blackbg"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@android:color/background_dark"
-                    android:id="@+id/blackbg"
+                    android:adjustViewBounds="false"
                     android:alpha="0.25"
-                    android:adjustViewBounds="false" />
+                    app:srcCompat="@android:color/background_dark" />
 
                 <TextView
-                    android:text="내 주변 PC방 찾기"
+                    android:id="@+id/textView4a"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/textView4a"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/white"
-                    android:gravity="center"
                     android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="내 주변 PC방 찾기"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </FrameLayout>
 
             <FrameLayout
+                android:id="@+id/frmlayoutHomeFavBtn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/frmlayoutHomeFavBtn">
+                android:visibility="gone">
 
                 <ImageView
-                    android:layout_width="match_parent"
                     android:id="@+id/imgHomeFavBtn"
-                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
                     android:layout_height="100dp"
                     android:adjustViewBounds="true"
-                    />
+                    android:scaleType="centerCrop" />
 
                 <ImageView
+                    android:id="@+id/blackbgb"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:srcCompat="@android:color/background_dark"
-                    android:id="@+id/blackbgb"
+                    android:adjustViewBounds="false"
                     android:alpha="0.25"
-                    android:adjustViewBounds="false" />
+                    app:srcCompat="@android:color/background_dark" />
 
                 <TextView
-                    android:text="내 PC방 즐겨찾기"
+                    android:id="@+id/textView4c"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:id="@+id/textView4c"
-                    android:textSize="20sp"
-                    android:textColor="@android:color/white"
-                    android:gravity="center"
                     android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="내 PC방 즐겨찾기"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
             </FrameLayout>
 

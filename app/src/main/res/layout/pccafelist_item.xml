@@ -131,22 +131,21 @@
             android:layout_marginTop="7dp">
 
             <TextView
+                android:id="@+id/txtPCCafeInfoSeat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceSmall"
-                android:text="좌석정보"
-                android:id="@+id/txtPCCafeInfoSeat"
-                android:textAllCaps="false"
+                android:layout_marginRight="3dp"
                 android:background="@drawable/bg_list_att_active"
-                android:paddingTop="3dp"
                 android:paddingBottom="3dp"
                 android:paddingLeft="7dp"
                 android:paddingRight="7dp"
+                android:paddingTop="3dp"
+                android:text="좌석정보"
+                android:textAllCaps="false"
+                android:textAppearance="?android:attr/textAppearanceSmall"
                 android:textColor="@color/colorPrimaryAccent"
-                android:layout_marginRight="3dp"
-                android:textStyle="bold"
                 android:textSize="9sp"
-                />
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"

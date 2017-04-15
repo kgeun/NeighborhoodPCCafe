@@ -23,6 +23,7 @@ import com.b2come.pcroom.activity.LoginSelectActivity;
 import com.b2come.pcroom.activity.MainActivity;
 import com.b2come.pcroom.applicationclass.Util;
 import com.b2come.pcroom.interfaces.LocationChangeApplyListener;
+import com.bumptech.glide.Glide;
 import com.facebook.AccessToken;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -45,6 +46,7 @@ public class HomeFragment extends Fragment implements LocationChangeApplyListene
         TextView address;
         LinearLayout btnLogin;
         LinearLayout btnMyInfo;
+        ImageView ivHomeAdv;
 
         public HomeFragment() {
             // Required empty public constructor
@@ -55,6 +57,7 @@ public class HomeFragment extends Fragment implements LocationChangeApplyListene
                                  Bundle savedInstanceState) {
             View view = inflater.inflate(R.layout.fragment_home, container, false);
             Toolbar toolbar = (Toolbar) view.findViewById(R.id.main_toolbar);
+
             toolbar.setTitle("");
 
             init(view);
@@ -73,6 +76,10 @@ public class HomeFragment extends Fragment implements LocationChangeApplyListene
         } else {
             address.setText("위치 재검색을 눌러주세요.");
         }
+
+        ivHomeAdv = (ImageView)view.findViewById(R.id.ivHomeAdv);
+        Glide.with(getActivity()).load("http://wepc.co.kr/wooripc/adv1.jpg")
+                .into(ivHomeAdv);
 
         img[0] = (ImageView)view.findViewById(R.id.imgHomeTopBg1);
         img[0].setImageBitmap(
