@@ -195,45 +195,45 @@
             </FrameLayout>
 
             <LinearLayout
-                android:orientation="horizontal"
                 android:layout_width="match_parent"
+                android:layout_height="42dp"
                 android:background="@drawable/rectangle_box_border"
                 android:gravity="center_vertical"
-                android:paddingTop="10dp"
+                android:orientation="horizontal"
                 android:paddingBottom="10dp"
                 android:paddingLeft="15dp"
-                android:layout_height="42dp">
+                android:paddingTop="10dp">
 
                 <ImageView
+                    android:id="@+id/imageView4"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
-                    app:srcCompat="@drawable/ic_pointer"
-                    android:id="@+id/imageView4"
-                    android:layout_marginRight="10dp" />
+                    android:layout_marginRight="10dp"
+                    app:srcCompat="@drawable/ic_pointer" />
 
                 <TextView
-                    android:text="서울시 마포구 상수동"
+                    android:id="@+id/txtHomeCurrentAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txtHomeCurrentAddress"
                     android:layout_weight="1"
-                    android:maxLines="1"
-                    android:textSize="13sp"
-                    android:textColor="#4A4A4A"
                     android:ellipsize="marquee"
                     android:focusable="true"
+                    android:lines="1"
                     android:marqueeRepeatLimit="marquee_forever"
-                    android:lines="1" />
+                    android:maxLines="1"
+                    android:text="서울시 마포구 상수동"
+                    android:textColor="#4A4A4A"
+                    android:textSize="13sp" />
 
                 <TextView
-                    android:text="위치 재검색"
+                    android:id="@+id/txtHomeLocationResearch"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:id="@+id/txtHomeLocationResearch"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginRight="15dp"
-                    android:textSize="13sp"
+                    android:text="위치 재검색"
                     android:textColor="@color/colorDisabled"
-                    android:layout_marginLeft="10dp" />
+                    android:textSize="13sp" />
             </LinearLayout>
 
             <FrameLayout

@@ -130,7 +130,6 @@ public class Util extends Activity {
         else {
             return null;
         }
-
     }
 
 }
